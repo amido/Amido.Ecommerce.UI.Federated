@@ -27,7 +27,13 @@
     "next-ui-components/text:lint": "npm run lint -w @next-ui-components/text --if-present",
     "next-ui-components/text:test": "npm run test -w @next-ui-components/text --if-present",
     "next-ui-components/text:ratchet": "npm run jest-ratchet -w @next-ui-components/text --if-present",
-    "constants:build": "npm run build -w @next/constants"
+    "constants:build": "npm run build -w @next/constants",
+    "header-federated:build": "npm run build -w @next/header-federated --if-present",
+    "header-federated:start": "npm run start -w @next/header-federated --if-present",
+    "header-federated:lint": "npm run lint -w @next/header-federated --if-present",
+    "header-federated:test": "npm run test -w @next/header-federated --if-present",
+    "header-federated:ratchet": "npm run jest-ratchet -w @next/header-federated --if-present"
+    
   },
   "repository": {
     "type": "git",
@@ -48,7 +54,8 @@
     "./libs/ui-components/Text",
     "./tools/CLI",
     "./apps/AppShell",
-    "./apps/MFE/Header"
+    "./apps/MFE/Header",
+    "./apps/MFE/HeaderFederated"
   ],
   "devDependencies": {
     "@babel/core": "^7.16.7",
